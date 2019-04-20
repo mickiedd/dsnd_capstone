@@ -30,3 +30,24 @@ Along with exploring state-of-the-art CNN models for classification, you will ma
 ### App Overview
 
 ![Sample Output][image4]
+
+### Result
+
+| Methods                     | Accuracy | Total Params |
+|-----------------------------|----------|--------------|
+| Simple CNN                  | 2.2727%  | 19,189       |
+| VGG16 Transfer learning     | 38.6364% | 68,229       |
+| Inception Transfer learning | 78.5885% | 272,517      |
+
+
+- The simple 8 layers CNN architecture's Test accuracy: 2.2727%
+
+- The VGG16 pre-trained bottleneck features Test accuracy: 38.6364%
+
+- The InceptionV3 pre-trained bottleneck features Test accuracy: 78.5885%
+
+### Conclusion
+
+- The InceptionV3 pre-trained bottleneck features one that use transfer learning is much better than the other two, especially the first one, the simple 8 layers CNN architecture.
+
+- It seems that, the more params it has, the more accuracy the model will get.
