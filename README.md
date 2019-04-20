@@ -22,6 +22,6 @@ Along with exploring state-of-the-art CNN models for classification, you will ma
  
 - You must location youself in the root folder and type 'python app/run.py' to run the Flask app for this project.
 
-### App Overvier
+### App Overview
 
 ![Sample Output][image4]
