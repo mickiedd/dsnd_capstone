@@ -5,6 +5,11 @@
 [image3]: ./images/vgg16_model_draw.png "VGG16 Model Figure"
 [image4]: ./images/Screenshotfrom2019-04-2010-50-18.png "ScreenShot"
 
+## File Overview
+
+- dog_app.ipynb -> This the notebook that contain all the project codes.
+
+- app/run.py    -> This is the Flash app for this project.
 
 ## Project Overview
 
