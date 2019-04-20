@@ -51,3 +51,5 @@ Along with exploring state-of-the-art CNN models for classification, you will ma
 - The InceptionV3 pre-trained bottleneck features one that use transfer learning is much better than the other two, especially the first one, the simple 8 layers CNN architecture.
 
 - It seems that, the more params it has, the more accuracy the model will get.
+
+- Transfer Learning is a good choice.
