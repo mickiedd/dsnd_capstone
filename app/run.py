@@ -1,9 +1,10 @@
 import os
 from flask import Flask, request, url_for, send_from_directory
 from werkzeug import secure_filename
+from classifier import DogBreedClassifier
 
 app = Flask(__name__)
-app.config['UPLOAD_FOLDER'] = '{}/upload'.format(os.getcwd())
+app.config['UPLOAD_FOLDER'] = '{}/uploads'.format(os.getcwd())
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
 
 html = '''
@@ -33,7 +34,10 @@ def upload_file():
             filename = secure_filename(file.filename)
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
             file_url = url_for('uploaded_file', filename=filename)
-
+            
+            c = DogBreedClassifier()
+            pred = c.predict("." + file_url)
+            
             return html + '<label>' +  pred + '</label><br><img src=' + file_url + '>'
     return html
 
